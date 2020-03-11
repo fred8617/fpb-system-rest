@@ -1,0 +1,7 @@
+query m {
+  userInfo {
+    menus {
+      id
+    }
+  }
+}

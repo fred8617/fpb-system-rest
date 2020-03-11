@@ -1,0 +1,28 @@
+type User {
+  id: ID!
+  "姓名"
+  name: String!
+  "角色"
+  role: String!
+  "公司"
+  company: String!
+  "账号"
+  account: String!
+  "电话"
+  phone: String!
+  "状态"
+  status: Int!
+}
+
+"用户信息"
+type UserInfo {
+  "用户信息"
+  user: User!
+  "所属菜单"
+  menus: [Menu]!
+}
+
+type Query {
+  "获取用户信息"
+  userInfo: UserInfo!
+}

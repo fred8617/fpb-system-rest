@@ -1,0 +1,26 @@
+fragment MenuFragment on Menu {
+  icon
+  id
+  layout
+  name
+  parentId
+  url
+  key
+  component
+}
+query userInfo {
+  userInfo {
+    menus {
+      ...MenuFragment
+    }
+    user {
+      account
+      company
+      id
+      name
+      phone
+      role
+      status
+    }
+  }
+}

@@ -1,0 +1,18 @@
+"菜单"
+type Menu {
+  id: ID!
+  "标识"
+  key: String!
+  "名称"
+  name: String!
+  "图标"
+  icon: String
+  "布局 front back empty"
+  layout: String!
+  "url"
+  url: String!
+  "父节点"
+  parentId: ID
+  "加载组件"
+  component: String
+}
